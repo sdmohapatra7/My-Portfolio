@@ -9,13 +9,17 @@ export const Footer = () => {
         <>
             <div className={"section " + themename}>
                 <a href="/" rel="noreferrer" target="_blank">
-                    <div className="footerBox">
+                    {/* <div className="footerBox">
                         <h3 className="footer">
                             Made with{" "}
                             <span style={{ color: `red`, background: `transparent` }}>❤</span>{" "}
                             By Shakti
                         </h3>
-                    </div>
+                        
+                    </div> */}
+                    <div className="footer">
+                        All trademarks are the property of their respective owners.<br></br> All rights reserved © 2025. 
+                        </div>
                 </a>
             </div>
         </>
