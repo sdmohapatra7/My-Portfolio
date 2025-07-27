@@ -21,9 +21,9 @@ export const About = () => {
                 </h1>
                 <Type />
                 <p className="about__desc" data-aos="fade-right">
-                    Passionate and creative Full Stack Developer having proficiency in
-                    MERN Stack. Attired with a variety of tools & technologies and keen to
-                    learn new one.
+                Dynamic Front End Developer with proven expertise at Kaizen Pvt. Ltd., excelling in Reacts and problem-solving. Successfully enhanced user interfaces and
+resolved over 850 student queries as a Teaching Assistant at Coding Ninjas, showcasing adaptability and teamwork. Committed to delivering high-quality,
+reusable components that drive project success.
                 </p>
                 <div className="about__contact center">
                     <a
@@ -68,7 +68,7 @@ export const About = () => {
                     className="btnResume"
                     onClick={() => {
                         window.open(
-                            "https://drive.google.com/file/d/14Tb7HZbNThemeddpPtf7EEh_9oer4J2a/view?usp=sharing"
+                            "https://drive.google.com/file/d/1XGxmeAjzSSIC9bY7HgkkxgxbZlu67AD5/view?usp=drive_link"
                         );
                     }}
                 >

@@ -31,8 +31,46 @@ export const Timeline = () => {
                     My <span className="different">Timeline 💫</span>
                 </h2>
                 <VerticalTimeline lineColor={linecolor}>
+                <VerticalTimelineElement
+                        date={"April 2024 - Present"}
+                        contentStyle={{
+                            boxShadow: `var(--shadow)`,
+                            border: "3px solid var(--clr-primary)",
+                            backgroundColor: `var(--clr-bg)`,
+                            textAlign: "center",
+                            color: `var(--clr-fg-alt)`,
+                        }}
+                        contentArrowStyle={{
+                            borderRight: "16px solid  var(--clr-primary)",
+                        }}
+                        iconStyle={{
+                            border: ` 3px solid var(--clr-primary)`,
+                            backgroundColor: `var(--clr-bg)`,
+                            color: `var(--clr-primary)`,
+                        }}
+                        icon={<WorkIcon />}
+                    >
+                        <h3
+                            className="vertical-timeline-element-title"
+                            data-aos="fade-right"
+                        >
+                            Frontend Developer
+                        </h3>
+                        <h4
+                            className="vertical-timeline-element-subtitle"
+                            data-aos="fade-right"
+                        >
+                            Kaizeninfocomm Pvt. Ltd.
+                        </h4>
+                        <p data-aos="fade-right">
+                        Worked closely with product owners, designers and other stakeholders
+                        throughout the development process.Collaborated with back-end developers to integrate user interface
+                        elements into applications.Debugged existing code to identify and fix bugs or performance issues.Developed reusable components that can be used in future projects
+                        with minimal effort.
+                        </p>
+                    </VerticalTimelineElement>
                     <VerticalTimelineElement
-                        date={"July 2023 - Present"}
+                        date={"July 2023 - Jun 2024"}
                         contentStyle={{
                             boxShadow: `var(--shadow)`,
                             border: "3px solid var(--clr-primary)",

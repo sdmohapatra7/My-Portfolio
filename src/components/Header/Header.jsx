@@ -9,17 +9,20 @@ export const Header = () => {
 
     return (
         <>
-            <header className={"header center " + themename}>
-                <h3>
-                    <a href="#home" className="link">
-                        <span>
-                            <img src={Image} alt="logo" />
-                        </span>
-                        Shaktidhar
-                    </a>
-                </h3>
-                <Navbar />
-            </header>
+            <header className={"header " + themename}>
+  <div className="center">
+    <h3>
+      <a href="#home" className="link">
+        <span>
+          <img src={Image} alt="logo" />
+        </span>
+        Shaktidhar
+      </a>
+    </h3>
+    <Navbar />
+  </div>
+</header>
+
         </>
     );
 };
