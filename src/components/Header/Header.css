@@ -48,8 +48,6 @@
 /* Mobile responsiveness */
 @media (max-width: 600px) {
   .header .center {
-    /* flex-direction: column; */
-    align-items: flex-start;
-    gap: 0.5rem;
+    justify-content: end;
   }
 }
