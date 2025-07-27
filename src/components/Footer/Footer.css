@@ -42,3 +42,27 @@
     color: #007bff;
     text-decoration: underline;
 }
+
+.connect-list {
+    list-style: none;
+    padding: 0;
+}
+
+.connect-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.connect-list a {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.connect-list a:hover {
+    color: #007bff;
+}

@@ -1,18 +1,55 @@
+/* Make header full width and sticky */
 .header {
-  height: 5em;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: var(--header-bg, #ffffff);
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #eaeaea;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Container inside header (center content, max width) */
+.header .center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   max-width: 1100px;
   width: 95%;
   margin: 0 auto;
-  justify-content: space-between;
 }
 
+/* Dark theme support */
+.header.dark {
+  background-color: #121212;
+  border-color: #333;
+}
+
+/* Logo & name */
+.header .link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: inherit;
+}
+
+.header img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Mobile responsiveness */
 @media (max-width: 600px) {
-  .header {
-    height: 6em;
+  .header .center {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
   }
-}
-
-img {
-  width: 30px;
-  margin-right: 4px;
 }
