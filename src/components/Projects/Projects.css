@@ -10,7 +10,7 @@
   margin: 6% 0% 6% 0%;
   box-shadow: var(--shadow);
   display: flex;
-  border-radius: 20px;
+  border-radius: 10px;
   transition: all 0.5s ease 0s;
 }
 
@@ -22,7 +22,7 @@
 }
 .project_videocontainer {
   flex-basis: 65%;
-  border-radius: 20px;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,18 +33,18 @@
   width: 90%;
   height: 90%;
 
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .project_videocontainer > div > img {
   width: 100%;
   height: 100%;
-  border: 3px solid var(--clr-primary);
-  border-radius: 20px;
+  border: 1.5px solid var(--clr-primary);
+  border-radius: 10px;
 }
 
 .project_information {
   flex-basis: 35%;
-  border-radius: 30px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,7 +59,8 @@
 }
 .project_information > p {
   margin-top: 1em;
-  text-align: center;
+  text-align: justify;         /* aligns both left and right sides */
+  text-justify: inter-word; 
 }
 .project_information > div:nth-child(3) {
   margin-top: 0.5em;
@@ -87,7 +88,7 @@
 }
 .btns {
   color: var(--clr-primary);
-  border: 2px solid var(--clr-primary);
+  border: 1.5px solid var(--clr-primary);
   border-radius: 5px;
   height: auto;
   cursor: pointer;
@@ -96,7 +97,7 @@
 }
 .btns:hover {
   color: var(--clr-bg);
-  border: 2px solid var(--clr-primary);
+  border: 1.5px solid var(--clr-primary);
   background-color: var(--clr-primary);
 }
 .project_information > h3 {
@@ -112,7 +113,7 @@
   grid-template-columns: repeat(2, 1fr);
 }
 .project {
-  border: 2px solid var(--clr-primary);
+  border: 1.5px solid var(--clr-primary);
   flex-direction: column;
 }
 

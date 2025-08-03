@@ -18,7 +18,7 @@ export const Footer = () => {
             <div className="footer-grid">
                 {/* Personal Intro */}
                 <div className="footer-about">
-                    <h3>Shakti</h3>
+                    <h3>Shaktidhar Mohapatra</h3>
                     <p>
                         Passionate about building web apps that are fast, accessible, and delightful. Let's connect and create something impactful.
                     </p>

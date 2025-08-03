@@ -15,7 +15,7 @@
     max-height: 140px;
     box-shadow: var(--shadow);
     z-index: 1;
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 2.5%;
     float: left;
     display: flex;
@@ -23,7 +23,7 @@
     justify-content: center;
     align-items: center;
     transition: all 0.5s ease 0s;
-    border: 2px solid var(--clr-primary);
+    border: 1.5px solid var(--clr-primary);
   }
   .techsection > div:hover {
     background-color: var(--clr-bg);
@@ -51,8 +51,8 @@
       height: 120vh;
     }
     .techsection > div {
-      width: 40%;
-      margin-right: 5%;
+      width: 45%;
+      /* margin-right: 5%; */
       margin-bottom: 2%;
       height: 18vh;
     }

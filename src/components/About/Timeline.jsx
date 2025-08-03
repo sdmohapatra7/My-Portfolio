@@ -37,7 +37,7 @@ export const Timeline = () => {
                             boxShadow: `var(--shadow)`,
                             border: "3px solid var(--clr-primary)",
                             backgroundColor: `var(--clr-bg)`,
-                            textAlign: "center",
+                            
                             color: `var(--clr-fg-alt)`,
                         }}
                         contentArrowStyle={{
@@ -63,10 +63,10 @@ export const Timeline = () => {
                             Kaizeninfocomm Pvt. Ltd.
                         </h4>
                         <p data-aos="fade-right">
-                        Worked closely with product owners, designers and other stakeholders
-                        throughout the development process.Collaborated with back-end developers to integrate user interface
-                        elements into applications.Debugged existing code to identify and fix bugs or performance issues.Developed reusable components that can be used in future projects
-                        with minimal effort.
+                            Worked closely with product owners, designers and other stakeholders throughout the development process.
+                            Collaborated with back-end developers to integrate user interface elements into applications.
+                            Debugged existing code to identify and fix bugs or performance issues.
+                            Developed reusable components that can be used in future projects with minimal effort.
                         </p>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
@@ -75,7 +75,7 @@ export const Timeline = () => {
                             boxShadow: `var(--shadow)`,
                             border: "3px solid var(--clr-primary)",
                             backgroundColor: `var(--clr-bg)`,
-                            textAlign: "center",
+                            
                             color: `var(--clr-fg-alt)`,
                         }}
                         contentArrowStyle={{
@@ -110,7 +110,7 @@ export const Timeline = () => {
                             boxShadow: `var(--shadow)`,
                             border: "3px solid var(--clr-primary)",
                             backgroundColor: `var(--clr-bg)`,
-                            textAlign: "center",
+                            
                             color: `var(--clr-fg-alt)`,
                         }}
                         contentArrowStyle={{
@@ -147,7 +147,7 @@ export const Timeline = () => {
                             boxShadow: `var(--shadow)`,
                             border: "3px solid var(--clr-primary)",
                             backgroundColor: `var(--clr-bg)`,
-                            textAlign: "center",
+                            
                             color: `var(--clr-fg-alt)`,
                         }}
                         contentArrowStyle={{
@@ -184,7 +184,7 @@ export const Timeline = () => {
                             boxShadow: `var(--shadow)`,
                             border: "3px solid var(--clr-primary)",
                             backgroundColor: `var(--clr-bg)`,
-                            textAlign: "center",
+                            
                             color: `var(--clr-fg-alt)`,
                         }}
                         contentArrowStyle={{
@@ -221,7 +221,7 @@ export const Timeline = () => {
                             boxShadow: `var(--shadow)`,
                             border: "3px solid var(--clr-primary)",
                             backgroundColor: `var(--clr-bg)`,
-                            textAlign: "center",
+                            
                             color: `var(--clr-fg-alt)`,
                         }}
                         contentArrowStyle={{
@@ -257,7 +257,7 @@ export const Timeline = () => {
                             boxShadow: `var(--shadow)`,
                             border: "3px solid var(--clr-primary)",
                             backgroundColor: `var(--clr-bg)`,
-                            textAlign: "center",
+                            
                             color: `var(--clr-fg-alt)`,
                         }}
                         contentArrowStyle={{
