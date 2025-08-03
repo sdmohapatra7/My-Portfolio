@@ -15,4 +15,12 @@
     font-size: 1.1em;
     color: var(--clr-primary);
   }
+                        
+ .mainsection p,
+.mainsection h3,
+.mainsection h4 {
+  /* text-align: justify; */
+  text-justify: inter-word;
+}
+
   

@@ -1,9 +1,9 @@
 .contactcontainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 2em;
     width: 450px;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: transparent;
     margin: 10px;
     margin: auto;
@@ -15,9 +15,9 @@
     font-size: 3em;
     transition: all 0.5s ease-in-out 0s;
     color: var(--clr-primary);
-    border: 3px solid var(--clr-primary);
+    border: 1.5px solid var(--clr-primary);
     padding: 5px;
-    border-radius: 20%;
+    border-radius: 10%;
   }
   .mailNumber .email {
     font-size: 2em;
@@ -60,7 +60,7 @@
   }
   
   .mailNumber{
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: transparent;
     margin: auto;
     width: 500px;
