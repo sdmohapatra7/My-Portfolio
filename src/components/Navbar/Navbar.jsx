@@ -5,7 +5,7 @@ import Brightness2Icon from "@mui/icons-material/Brightness2";
 import WbSunnyRoundedIcon from "@mui/icons-material/WbSunnyRounded";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from "@mui/icons-material/Close";
-
+import resume_url from "../../config.js";
 export const Navbar = () => {
     const [{ themename, toggeltheme }] = React.useContext(ThemeContext);
     const [showNavList, setShowNavList] = React.useState(false);
@@ -71,7 +71,7 @@ export const Navbar = () => {
                     </li>
                     <li className="nav__list-item">
                         <a
-                            href="https://drive.google.com/file/d/1XGxmeAjzSSIC9bY7HgkkxgxbZlu67AD5/view?usp=drive_link"
+                            href={resume_url}
                             onClick={toggleNavList}
                             className="link link--nav"
                             target="_blank"
