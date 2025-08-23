@@ -5,7 +5,7 @@ import Brightness2Icon from "@mui/icons-material/Brightness2";
 import WbSunnyRoundedIcon from "@mui/icons-material/WbSunnyRounded";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from "@mui/icons-material/Close";
-import resume_url from "../../config.js";
+import resume_url from "../../config";
 export const Navbar = () => {
     const [{ themename, toggeltheme }] = React.useContext(ThemeContext);
     const [showNavList, setShowNavList] = React.useState(false);

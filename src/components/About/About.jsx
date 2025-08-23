@@ -11,7 +11,7 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import { Introduction } from "./Introduction";
 import { Timeline } from "./Timeline";
 import { Techstacks } from "./Techstacks";
-import resume_url from "../../config.js"
+import resume_url from "../../config"
 // import Button from "@mui/material/Button";
 export const About = () => {
     return (
@@ -69,7 +69,7 @@ reusable components that drive project success.
                     className="btnResume"
                     onClick={() => {
                         window.open(
-                            {resume_url}
+                            resume_url
                         );
                     }}
                 >
