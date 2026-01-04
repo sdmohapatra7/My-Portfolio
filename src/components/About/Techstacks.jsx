@@ -3,10 +3,15 @@ import "./Techstacks.css";
 import { FaReact, FaNodeJs, FaJava } from "react-icons/fa";
 import {
     SiHtml5,
-    SiExpress
+    SiExpress,
+    SiTailwindcss,
+    SiRedux,
+    SiJquery,
+    SiSass,
+    SiFigma
 } from "react-icons/si";
 import { DiCss3, DiMongodb } from "react-icons/di";
-import { SiJavascript, SiRender,SiPostman } from "react-icons/si";
+import { SiJavascript, SiRender, SiPostman } from "react-icons/si";
 import { VscGithub } from "react-icons/vsc";
 import { BsBootstrap } from "react-icons/bs";
 
@@ -17,8 +22,36 @@ export const Techstacks = () => {
                 <h2 className="section__title different">Skills</h2>
                 <div className="techsection">
                     <div>
+                        <FaReact />
+                        <h5>React</h5>
+                    </div>
+                    <div>
                         <SiJavascript />
                         <h5>Javascript</h5>
+                    </div>
+                    <div>
+                        <FaJava />
+                        <h5>Java</h5>
+                    </div>
+                    <div>
+                        <SiJquery />
+                        <h5>jQuery</h5>
+                    </div>
+                    <div>
+                        <SiRedux />
+                        <h5>Redux</h5>
+                    </div>
+                    <div>
+                        <FaNodeJs />
+                        <h5>Nodejs</h5>
+                    </div>
+                    <div>
+                        <SiExpress />
+                        <h5>Express</h5>
+                    </div>
+                    <div>
+                        <DiMongodb />
+                        <h5>MongoDb</h5>
                     </div>
                     <div>
                         <SiHtml5 />
@@ -29,30 +62,24 @@ export const Techstacks = () => {
                         <h5>CSS</h5>
                     </div>
                     <div>
-                        <FaReact />
-                        <h5>React</h5>
-                    </div>
-                    <div>
-                        <FaNodeJs />
-                        <h5>Nodejs</h5>
-                    </div>
-                    <div>
-                        <DiMongodb />
-                        <h5>MongoDb</h5>
-                    </div>
-
-                    <div>
-                        <SiExpress />
-                        <h5>Express</h5>
-                    </div>
-
-                    <div>
-                        <FaJava />
-                        <h5>Java</h5>
+                        <SiTailwindcss />
+                        <h5>Tailwind</h5>
                     </div>
                     <div>
                         <BsBootstrap />
                         <h5>Bootstrap</h5>
+                    </div>
+                    <div>
+                        <SiSass />
+                        <h5>SASS</h5>
+                    </div>
+                    <div>
+                        <SiFigma />
+                        <h5>Figma</h5>
+                    </div>
+                    <div>
+                        <VscGithub />
+                        <h5>Github</h5>
                     </div>
                     <div>
                         <SiPostman />
@@ -61,10 +88,6 @@ export const Techstacks = () => {
                     <div>
                         <SiRender />
                         <h5>Render</h5>
-                    </div>
-                    <div>
-                        <VscGithub />
-                        <h5>Github</h5>
                     </div>
                 </div>
             </div>

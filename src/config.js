@@ -1,2 +1,2 @@
-const  resume_url= "https://drive.google.com/file/d/1l351KF-4CdZSnKMKcBKmTV2gdrtHjycA/view?usp=drive_link"
+const  resume_url= "https://drive.google.com/file/d/1YURmnlhlNuFYl97bJrrAL-BZWmkpaouG/view?usp=sharing"
 export default resume_url;
