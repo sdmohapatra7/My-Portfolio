@@ -3,6 +3,9 @@ import { Header } from "./components/Header/Header";
 import { Footer } from "./components/Footer/Footer";
 import { ScrollToTop } from "./components/ScrollToTop/ScrollToTop";
 import { About } from "./components/About/About";
+import { Introduction } from "./components/About/Introduction";
+import { Timeline } from "./components/About/Timeline";
+import { Techstacks } from "./components/About/Techstacks";
 import { Contact } from "./components/Contact/Contact";
 import { Projects } from "./components/Projects/Projects";
 import "./App.css";
@@ -18,16 +21,21 @@ function App() {
 
   return (
     <div id="top" className={`${themename} app`}>
-      {/* ✅ Header should NOT be inside a section */}
       <Header />
-
       <main>
-        {/* Add id="home" here if needed for scroll target */}
         <section id="home">
-          {/* You can add a hero or intro component here if needed */}
+          <About />
+        </section>
+        
+        <section id="about">
+          <Introduction />
         </section>
 
-        <About />
+        <section id="skills">
+          <Techstacks />
+        </section>
+
+        <Timeline />
 
         <section id="projects">
           <Projects />
@@ -37,10 +45,10 @@ function App() {
           <Contact />
         </section>
       </main>
-
       <Footer />
       <ScrollToTop />
     </div>
+
   );
 }
 

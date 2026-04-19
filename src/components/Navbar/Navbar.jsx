@@ -11,9 +11,12 @@ export const Navbar = () => {
     const [showNavList, setShowNavList] = React.useState(false);
 
     const toggleNavList = (id) => {
-        var element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView();
+        if (typeof id === "string") {
+            const sectionId = id.startsWith("#") ? id.substring(1) : id;
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+            }
         }
         setShowNavList(!showNavList);
     };
@@ -21,8 +24,7 @@ export const Navbar = () => {
         <>
             <nav className="center nav">
                 <ul
-                    style={{ display: showNavList ? "flex" : null }}
-                    className="nav__list"
+                    className={`nav__list ${showNavList ? "nav__list--open" : ""}`}
                 >
                     <li className="nav__list-item">
                         <a

@@ -19,10 +19,14 @@ export const About = () => {
         </h1>
         <Type />
         <p className="about__desc" data-aos="fade-right">
-          A performance-driven <strong>Frontend Developer</strong> with a Master's in Mathematics. 
-          Currently at <strong>Kaizeninfocomm Pvt Ltd</strong>, I architect dynamic restaurant dashboards and franchise modules using <strong>React.js</strong>, <strong>jQuery</strong>, and <strong>XSLT</strong>. 
-          I specialize in integrating secure payment gateways like <strong>Stripe & Razorpay</strong> and optimizing complex data flows. 
-          Previously, I mentored <strong>600+ students</strong> in <strong>DSA & Web Development</strong> at Coding Ninjas, honing my ability to solve complex problems with clean, scalable code.
+          A results-driven <strong>Frontend Engineer</strong> with a rigorous Master's foundation in Mathematics. 
+          Currently at <strong>Kaizeninfocomm</strong>, I architect high-performance restaurant dashboards 
+          and franchise management ecosystems using <strong>React.js</strong> and <strong>Native JavaScript</strong>. 
+          I specialize in building <strong>Scalable UI Architectures</strong> and integrating 
+          secure, global payment engines like <strong>Stripe & Razorpay</strong>. 
+          By bridging the logic of <strong>Mathematics</strong> with the creativity of 
+          <strong>Web Development</strong>, I build digital experiences that are as 
+          technically robust as they are visually stunning.
         </p>
         <div className="about__contact center">
           <a
@@ -63,20 +67,17 @@ export const About = () => {
           </a>
         </div>
 
-        <button
+        <a
+          href={resume_url}
+          target="_blank"
+          rel="noreferrer"
           className="btnResume"
-          onClick={() => {
-            window.open(resume_url);
-          }}
+          style={{ textDecoration: "none", display: "inline-block", textAlign: "center" }}
         >
           Resume
-        </button>
+        </a>
+
       </div>
-      <Introduction />
-      <Timeline />
-      <section id="#skills">
-        <Techstacks />
-      </section>
     </>
   );
-};
+};

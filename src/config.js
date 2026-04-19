@@ -1,2 +1,4 @@
-const  resume_url= "https://drive.google.com/file/d/1YURmnlhlNuFYl97bJrrAL-BZWmkpaouG/view?usp=sharing"
+import resume from "./assets/shakti_fullstack_developer.pdf";
+const resume_url = resume;
 export default resume_url;
+

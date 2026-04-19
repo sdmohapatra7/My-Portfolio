@@ -1,6 +1,5 @@
 import React from "react";
 import "./Projects.css";
-import { FaReact } from "react-icons/fa";
 import todo from '../../assets/todo.png';
 import habit from '../../assets/habit.png';
 import auth from '../../assets/auth.png';
@@ -8,17 +7,28 @@ import hospital from '../../assets/hospital.png';
 import album from '../../assets/album.png';
 import ecommerce from '../../assets/ecommerce.png';
 import portfolio from '../../assets/S-logo.jpg'; // Using your logo for the portfolio project
+import whatsapp from '../../assets/whatsapp.png';
+import salon from '../../assets/salon.png';
+import linkedin from '../../assets/linkedin.png';
+
+
 
 import {
     SiHtml5,
     SiExpress,
     SiMongodb,
-    SiNodedotjs,
     SiPostman,
     SiRedux,
     SiJavascript,
-    SiCss3
+    SiCss3,
+    SiPostgresql,
+    SiSocketdotio,
+    SiFirebase
 } from "react-icons/si";
+import { FaReact, FaNodeJs } from "react-icons/fa";
+
+
+
 // import { DiCss3 } from "react-icons/di";
 // import { IoLogoJavascript } from "react-icons/io";
 
@@ -29,7 +39,148 @@ export const Projects = () => {
                 <h2 className="section__title different">Projects</h2>
                 <div className="allProjects">
                     
+                    
+                    {/* Project: Salon Booking App */}
+                    <div className="projects_container" data-aos="fade-right">
+                        <div className="project">
+                            <div className="project_videocontainer">
+                                <div>
+                                    <img src={salon} alt="Salon Booking App" />
+                                </div>
+                            </div>
+                            <div className="project_information">
+                                <h2>Salon Booking App</h2>
+                                <p>
+                                    A comprehensive full-stack application for managing salon appointments. 
+                                    Features service selection, real-time availability, secure 
+                                    checkout, and an admin dashboard for business management.
+                                </p>
+                                <div>
+                                    <FaReact />
+                                    <FaNodeJs />
+                                    <SiExpress />
+                                    <SiPostgresql />
+                                    <SiRedux />
+                                </div>
+                                <div>
+                                    <a
+                                        href="https://salon-booking-app-sd.vercel.app/" // Live URL
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        <span type="button" className="btns onbt onbt">
+                                            See this Live
+                                        </span>
+                                    </a>
+                                    <a
+                                        href="https://github.com/sdmohapatra7/Salon-Booking-App"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        <span type="button" className="btns onbt">
+                                            View Code
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Project: WhatsApp Clone */}
+                    <div className="projects_container" data-aos="fade-right">
+                        <div className="project">
+                            <div className="project_videocontainer">
+                                <div>
+                                    <img src={whatsapp} alt="WhatsApp Clone" />
+                                </div>
+                            </div>
+                            <div className="project_information">
+                                <h2>WhatsApp Clone</h2>
+                                <p>
+                                    A real-time messaging application featuring instant chat, 
+                                    disappearing messages, and status updates. Built with 
+                                    modern UI/UX principles and scalable backend architecture.
+                                </p>
+                                <div>
+                                    <FaReact />
+                                    <SiSocketdotio />
+                                    <FaNodeJs />
+                                    <SiExpress />
+                                    <SiMongodb />
+                                </div>
+                                <div>
+                                    <a
+                                        href="https://whatsapp-clone-sd.vercel.app/" // Live URL
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        <span type="button" className="btns onbt onbt">
+                                            See this Live
+                                        </span>
+                                    </a>
+                                    <a
+                                        href="https://github.com/sdmohapatra7/WhatsApp-Clone"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        <span type="button" className="btns onbt">
+                                            View Code
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Project: LinkedIn Clone */}
+                    <div className="projects_container" data-aos="fade-right">
+                        <div className="project">
+                            <div className="project_videocontainer">
+                                <div>
+                                    <img src={linkedin} alt="LinkedIn Clone" />
+                                </div>
+                            </div>
+                            <div className="project_information">
+                                <h2>LinkedIn Clone</h2>
+                                <p>
+                                    A professional networking platform clone featuring user 
+                                    authentication, post creation with images, real-time feed 
+                                    updates, and a responsive glassmorphic UI.
+                                </p>
+                                <div>
+                                    <FaReact />
+                                    <SiRedux />
+                                    <SiFirebase />
+                                    <SiCss3 />
+                                    <SiJavascript />
+                                </div>
+                                <div>
+                                    <a
+                                        href="https://linkedin-clone-sd.vercel.app/" // Live URL
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        <span type="button" className="btns onbt onbt">
+                                            See this Live
+                                        </span>
+                                    </a>
+                                    <a
+                                        href="https://github.com/sdmohapatra7/LinkedIn-Clone"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        <span type="button" className="btns onbt">
+                                            View Code
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     {/* Project 1: Ecommerce (Flagship) */}
+
+
                     <div className="projects_container" data-aos="fade-right">
                         <div className="project">
                             <div className="project_videocontainer">
@@ -47,7 +198,7 @@ export const Projects = () => {
                                 <div>
                                     <FaReact />
                                     <SiRedux />
-                                    <SiNodedotjs />
+                                    <FaNodeJs />
                                     <SiExpress />
                                     <SiMongodb />
                                 </div>
@@ -91,7 +242,7 @@ export const Projects = () => {
                                     Built with Passport.js and Redis for session management.
                                 </p>
                                 <div>
-                                    <SiNodedotjs />
+                                    <FaNodeJs />
                                     <SiExpress />
                                     <SiMongodb />
                                     <SiHtml5 /> {/* EJS Placeholder */}
@@ -135,7 +286,7 @@ export const Projects = () => {
                                     mark them as done/not done for the last 7 days, and track their consistency visually.
                                 </p>
                                 <div>
-                                    <SiNodedotjs />
+                                    <FaNodeJs />
                                     <SiExpress />
                                     <SiMongodb />
                                     <SiHtml5 />
@@ -179,7 +330,7 @@ export const Projects = () => {
                                     Features dynamic DOM manipulation and persistent storage using MongoDB.
                                 </p>
                                 <div>
-                                    <SiNodedotjs />
+                                    <FaNodeJs />
                                     <SiExpress />
                                     <SiMongodb />
                                     <SiHtml5 />
@@ -268,7 +419,7 @@ export const Projects = () => {
                                     Includes JWT authentication and status filtering.
                                 </p>
                                 <div>
-                                    <SiNodedotjs />
+                                    <FaNodeJs />
                                     <SiExpress />
                                     <SiMongodb />
                                     <SiPostman />
