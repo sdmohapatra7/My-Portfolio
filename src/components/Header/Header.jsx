@@ -9,19 +9,17 @@ export const Header = () => {
 
     return (
         <>
-            <header className={"header " + themename}>
-  <div className="center">
-    <h3>
-      <a href="#home" className="link">
-        <span>
-          <img src={Image} alt="logo" />
-        </span>
-        Shaktidhar
-      </a>
-    </h3>
-    <Navbar />
-  </div>
-</header>
+      <header className={"header " + themename}>
+        <div className="header__content">
+          <h3>
+            <a href="#home" className="link">
+              <img src={Image} alt="logo" className="logo" />
+              <span className="name">Shaktidhar</span>
+            </a>
+          </h3>
+          <Navbar />
+        </div>
+      </header>
 
         </>
     );

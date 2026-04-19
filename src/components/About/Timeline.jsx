@@ -49,26 +49,22 @@ export const Timeline = () => {
                         }}
                         icon={<WorkIcon />}
                     >
-                        <h3
-                            className="vertical-timeline-element-title"
-                            data-aos="fade-right"
-                        >
+                        <h3 className="vertical-timeline-element-title">
                             Frontend Developer
                         </h3>
-                        <h4
-                            className="vertical-timeline-element-subtitle"
-                            data-aos="fade-right"
-                        >
+                        <h4 className="vertical-timeline-element-subtitle">
                             Kaizeninfocomm Pvt. Ltd.
                         </h4>
-                        <p data-aos="fade-right">
-                            Architecting restaurant dashboards using <strong>React.js</strong>, <strong>jQuery</strong>, and <strong>XSLT</strong>. 
-                            Successfully integrated global payment gateways (Stripe, Razorpay) and optimized complex data flows for franchise management modules. 
-                            [cite_start]Ensuring mobile-first design and clean architecture[cite: 68, 70].
+                        <p>
+                            Architecting high-performance restaurant dashboards and franchise management modules. 
+                            Specializing in <strong>React.js</strong> and <strong>jQuery</strong>, I integrate 
+                            global payment systems like <strong>Stripe</strong> and <strong>Razorpay</strong> while 
+                            optimizing data flow and ensuring a premium user experience.
                         </p>
                     </VerticalTimelineElement>
+
                     <VerticalTimelineElement
-                        date={"July 2023 - July 2024"}
+                        date={"July 2023 - March 2024"}
                         contentStyle={{
                             boxShadow: `var(--shadow)`,
                             border: "3px solid var(--clr-primary)",
@@ -85,26 +81,22 @@ export const Timeline = () => {
                         }}
                         icon={<WorkIcon />}
                     >
-                        <h3
-                            className="vertical-timeline-element-title"
-                            data-aos="fade-right"
-                        >
+                        <h3 className="vertical-timeline-element-title">
                             Teaching Assistant
                         </h3>
-                        <h4
-                            className="vertical-timeline-element-subtitle"
-                            data-aos="fade-right"
-                        >
+                        <h4 className="vertical-timeline-element-subtitle">
                             Coding Ninjas
                         </h4>
-                        <p data-aos="fade-right">
-                            Mentored <strong>600+ students</strong> in Full Stack Web Development and DSA. 
-                            Achieved a student satisfaction rating of <strong>4.7/5.0</strong> while resolving over <strong>850+ technical doubts</strong> 
-                            [cite_start]and debugging complex codebases[cite: 76, 77].
+                        <p>
+                            Mentored a community of <strong>600+ students</strong> in DSA and Full Stack Web 
+                            Development. Resolved over <strong>850+ technical queries</strong> with a 
+                            consistently high satisfaction rating of <strong>4.7/5.0</strong>, helping 
+                            future developers debug complex codebases and master core concepts.
                         </p>
                     </VerticalTimelineElement>
+
                     <VerticalTimelineElement
-                        date={"2023 (Certification)"}
+                        date={"Jan 2023 - June 2023"}
                         contentStyle={{
                             boxShadow: `var(--shadow)`,
                             border: "3px solid var(--clr-primary)",
@@ -121,25 +113,20 @@ export const Timeline = () => {
                         }}
                         icon={<SchoolIcon />}
                     >
-                        <h3
-                            className="vertical-timeline-element-title"
-                            data-aos="fade-right"
-                        >
-                            Full Stack Web Development Trainee
+                        <h3 className="vertical-timeline-element-title">
+                            Full Stack Web Development
                         </h3>
-                        <h4
-                            className="vertical-timeline-element-subtitle"
-                            data-aos="fade-right"
-                        >
-                            Coding Ninjas Career Camp
+                        <h4 className="vertical-timeline-element-subtitle">
+                            Coding Ninjas (Career Camp)
                         </h4>
-                        <p data-aos="fade-right">
-                            Intensive training in MERN Stack, Data Structures, Algorithms, and Java. 
-                            [cite_start]Built multiple full-stack projects including E-commerce platforms and Authentication systems[cite: 93].
+                        <p>
+                            Intensive training in the <strong>MERN Stack</strong>, Data Structures, and 
+                            Algorithms. Built multiple professional projects including secure 
+                            authentication systems and dynamic e-commerce platforms.
                         </p>
                     </VerticalTimelineElement>
+
                     <VerticalTimelineElement
-                        className="vertical-timeline-element--work"
                         date={"Aug 2019 - Sep 2021"}
                         contentStyle={{
                             boxShadow: `var(--shadow)`,
@@ -157,26 +144,21 @@ export const Timeline = () => {
                         }}
                         icon={<SchoolIcon />}
                     >
-                        <h3
-                            className="vertical-timeline-element-title"
-                            data-aos="fade-right"
-                        >
+                        <h3 className="vertical-timeline-element-title">
                             Master of Science (Mathematics)
                         </h3>
-                        <h4
-                            className="vertical-timeline-element-subtitle"
-                            data-aos="fade-right"
-                        >
+                        <h4 className="vertical-timeline-element-subtitle">
                             Fakir Mohan University, Balasore
                         </h4>
-                        <p data-aos="fade-right">
-                            Specialization in Advanced Mathematics. Developed strong analytical and problem-solving skills 
-                            [cite_start]applied to algorithmic logic[cite: 80, 81, 82].
+                        <p>
+                            Specialization in Advanced Mathematics. Developed a rigorous analytical 
+                            mindset and advanced problem-solving capabilities which I now apply to 
+                            algorithmic logic and software architecture.
                         </p>
                     </VerticalTimelineElement>
+
                     <VerticalTimelineElement
-                        className="vertical-timeline-element--work"
-                        date={"Aug 2015 - Aug 2019"}
+                        date={"Aug 2016 - Aug 2019"}
                         contentStyle={{
                             boxShadow: `var(--shadow)`,
                             border: "3px solid var(--clr-primary)",
@@ -193,25 +175,21 @@ export const Timeline = () => {
                         }}
                         icon={<SchoolIcon />}
                     >
-                        <h3
-                            className="vertical-timeline-element-title"
-                            data-aos="fade-right"
-                        >
+                        <h3 className="vertical-timeline-element-title">
                             Bachelor of Science (Mathematics)
                         </h3>
-                        <h4
-                            className="vertical-timeline-element-subtitle"
-                            data-aos="fade-right"
-                        >
+                        <h4 className="vertical-timeline-element-subtitle">
                             MPC Autonomous College, Baripada
                         </h4>
-                        <p data-aos="fade-right">
-                            Graduated with Honors. [cite_start]Focused on structural design and project management coursework[cite: 83, 84, 85].
+                        <p>
+                            Graduated with Honors. Focused on structural logic and computational 
+                            methods, laying the foundation for a career in technology and system design.
                         </p>
                     </VerticalTimelineElement>
+
                     <VerticalTimelineElement
-                        className="vertical-timeline-element--work"
-                        date={"Jul 2014 - May 2016"}
+
+                        date={"July 2014 - May 2016"}
                         contentStyle={{
                             boxShadow: `var(--shadow)`,
                             border: "3px solid var(--clr-primary)",
@@ -228,25 +206,22 @@ export const Timeline = () => {
                         }}
                         icon={<SchoolIcon />}
                     >
-                        <h3
-                            className="vertical-timeline-element-title"
-                            data-aos="fade-right"
-                        >
+                        <h3 className="vertical-timeline-element-title">
                             Higher Secondary (Science)
                         </h3>
-                        <h4
-                            className="vertical-timeline-element-subtitle"
-                            data-aos="fade-right"
-                        >
+                        <h4 className="vertical-timeline-element-subtitle">
                             Prince College Of Science, Mayurbhanj
                         </h4>
-                        <p data-aos="fade-right">
-                            Studied Physics, Chemistry, Mathematics, and IT. Passed with Distinction.
+                        <p>
+                            Studied Physics, Chemistry, Mathematics, and IT. Graduated with 
+                            Distinction, solidifying my analytical foundation and early interest 
+                            in computing.
                         </p>
                     </VerticalTimelineElement>
 
                     <VerticalTimelineElement
                         icon={<StarRateIcon />}
+
                         iconStyle={{
                             border: ` 3px solid var(--clr-primary)`,
                             backgroundColor: `var(--clr-bg)`,

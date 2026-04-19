@@ -8,8 +8,18 @@ import {
     SiRedux,
     SiJquery,
     SiSass,
-    SiFigma
+    SiFigma,
+    SiTypescript,
+    SiVercel,
+    SiNextdotjs,
+    SiPostgresql,
+    SiFirebase,
+    SiSocketdotio
 } from "react-icons/si";
+
+
+
+
 import { DiCss3, DiMongodb } from "react-icons/di";
 import { SiJavascript, SiRender, SiPostman } from "react-icons/si";
 import { VscGithub } from "react-icons/vsc";
@@ -89,7 +99,35 @@ export const Techstacks = () => {
                         <SiRender />
                         <h5>Render</h5>
                     </div>
+                    <div>
+                        <SiVercel />
+                        <h5>Vercel</h5>
+                    </div>
+                    <div>
+                        <SiTypescript />
+                        <h5>TypeScript</h5>
+                    </div>
+                    <div>
+                        <SiNextdotjs />
+                        <h5>Next.js</h5>
+                    </div>
+                    <div>
+                        <SiPostgresql />
+                        <h5>PostgreSQL</h5>
+                    </div>
+                    <div>
+                        <SiFirebase />
+                        <h5>Firebase</h5>
+                    </div>
+                    <div>
+                        <SiSocketdotio />
+                        <h5>Socket.io</h5>
+                    </div>
                 </div>
+
+
+
+
             </div>
         </>
     );

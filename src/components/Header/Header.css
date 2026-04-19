@@ -1,58 +1,66 @@
-/* Make header full width and sticky */
 .header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  height: 5rem;
   width: 100%;
-  background-color: var(--header-bg, #ffffff);
-  padding: 0.75rem 0 0.25rem 0;
-  border-bottom: 1px solid #eaeaea;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-bg);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
 }
 
-/* Container inside header (center content, max width) */
-.header .center {
+
+.header__content {
+  width: 90%;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1100px;
-  width: 95%;
-  margin: 0 auto;
 }
 
-/* Dark theme support */
-.header.dark {
-  background-color: #121212;
-  border-color: #333;
+.header h3 {
+  z-index: 1001;
 }
 
-/* Logo & name */
 .header .link {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 1rem;
-  font-weight: 600;
+  gap: 12px;
   text-decoration: none;
-  color: inherit;
+  color: var(--clr-primary);
 }
 
-.header img {
-  width: 40px;
-  height: 40px;
+.header .logo {
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center top;
-  /* border: 2px solid #ddd;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1); */
+  border: 2px solid var(--clr-primary);
 }
 
+.header .name {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
 
+@media (min-width: 600px) {
+  .header {
+    height: 6rem;
+  }
+  
+  .header .logo {
+    width: 45px;
+    height: 45px;
+  }
 
-/* Mobile responsiveness */
-@media (max-width: 600px) {
-  .header .center {
-    justify-content: end;
+  .header .name {
+    font-size: 1.5rem;
   }
 }
+
+
+
