@@ -1,20 +1,25 @@
 {
   "files": {
-    "main.css": "/My-Portfolio/static/css/main.7248536f.css",
-    "main.js": "/My-Portfolio/static/js/main.70db6ce7.js",
+    "main.css": "/My-Portfolio/static/css/main.301bfab4.css",
+    "main.js": "/My-Portfolio/static/js/main.c29968d4.js",
+    "static/media/salon.png": "/My-Portfolio/static/media/salon.d6d0d9bb7981d9759791.png",
+    "static/media/whatsapp.png": "/My-Portfolio/static/media/whatsapp.89f6bb05a943d65ca62c.png",
+    "static/media/linkedin.png": "/My-Portfolio/static/media/linkedin.3364aacaaf80bb02f42b.png",
     "static/media/ecommerce.png": "/My-Portfolio/static/media/ecommerce.4b2f0cd8a4129d13152a.png",
     "static/media/S-logo.jpg": "/My-Portfolio/static/media/S-logo.730dfc7e10579156b201.jpg",
+    "static/media/sp_image.jpg": "/My-Portfolio/static/media/sp_image.621edd1ded7c48a8c558.jpg",
+    "static/media/shakti_fullstack_developer.pdf": "/My-Portfolio/static/media/shakti_fullstack_developer.cd83fb5ba219d3b37345.pdf",
     "static/media/hospital.png": "/My-Portfolio/static/media/hospital.6e8b426b9b346ed9b0fe.png",
     "static/media/auth.png": "/My-Portfolio/static/media/auth.2c805491b1891e6faf0b.png",
     "static/media/album.png": "/My-Portfolio/static/media/album.ead670081b7886d3ad96.png",
     "static/media/habit.png": "/My-Portfolio/static/media/habit.030d0155f10b89689ccf.png",
     "static/media/todo.png": "/My-Portfolio/static/media/todo.7ec5d2faf5e655c8ef3a.png",
     "index.html": "/My-Portfolio/index.html",
-    "main.7248536f.css.map": "/My-Portfolio/static/css/main.7248536f.css.map",
-    "main.70db6ce7.js.map": "/My-Portfolio/static/js/main.70db6ce7.js.map"
+    "main.301bfab4.css.map": "/My-Portfolio/static/css/main.301bfab4.css.map",
+    "main.c29968d4.js.map": "/My-Portfolio/static/js/main.c29968d4.js.map"
   },
   "entrypoints": [
-    "static/css/main.7248536f.css",
-    "static/js/main.70db6ce7.js"
+    "static/css/main.301bfab4.css",
+    "static/js/main.c29968d4.js"
   ]
 }
