@@ -64,7 +64,7 @@ export const Projects = () => {
                                 </div>
                                 <div>
                                     <a
-                                        href="https://salon-booking-app-sd.vercel.app/" // Live URL
+                                        href="https://salon-booking-silk-seven.vercel.app/" // Live URL
                                         target="_blank"
                                         rel="noreferrer"
                                     >
@@ -73,7 +73,7 @@ export const Projects = () => {
                                         </span>
                                     </a>
                                     <a
-                                        href="https://github.com/sdmohapatra7/Salon-Booking-App"
+                                        href="https://github.com/sdmohapatra7/salon_booking"
                                         target="_blank"
                                         rel="noreferrer"
                                     >
@@ -119,7 +119,7 @@ export const Projects = () => {
                                         </span>
                                     </a>
                                     <a
-                                        href="https://github.com/sdmohapatra7/WhatsApp-Clone"
+                                        href="https://github.com/sdmohapatra7/whatsup_clone"
                                         target="_blank"
                                         rel="noreferrer"
                                     >
@@ -156,7 +156,7 @@ export const Projects = () => {
                                 </div>
                                 <div>
                                     <a
-                                        href="https://linkedin-clone-sd.vercel.app/" // Live URL
+                                        href="https://linkdin-clone-gray.vercel.app/" // Live URL
                                         target="_blank"
                                         rel="noreferrer"
                                     >
@@ -165,7 +165,7 @@ export const Projects = () => {
                                         </span>
                                     </a>
                                     <a
-                                        href="https://github.com/sdmohapatra7/LinkedIn-Clone"
+                                        href="https://github.com/sdmohapatra7/linkdin_clone"
                                         target="_blank"
                                         rel="noreferrer"
                                     >
@@ -204,7 +204,7 @@ export const Projects = () => {
                                 </div>
                                 <div>
                                     <a
-                                        href="https://github.com/sdmohapatra7/Ecommerce_App" // Update with live link if available
+                                        href="https://ecommerce-app-eight-steel.vercel.app/" // Update with live link if available
                                         target="_blank"
                                         rel="noreferrer"
                                     >
