@@ -1,20 +1,27 @@
 {
   "files": {
-    "main.css": "/My-Portfolio/static/css/main.7248536f.css",
-    "main.js": "/My-Portfolio/static/js/main.70db6ce7.js",
+    "main.css": "/My-Portfolio/static/css/main.9023de6b.css",
+    "main.js": "/My-Portfolio/static/js/main.8889e624.js",
+    "static/media/societypro.png": "/My-Portfolio/static/media/societypro.e5601c127f6aaa349258.png",
+    "static/media/hms.png": "/My-Portfolio/static/media/hms.3d7fbdfd165b20f1d714.png",
+    "static/media/salon.png": "/My-Portfolio/static/media/salon.d6d0d9bb7981d9759791.png",
+    "static/media/whatsapp.png": "/My-Portfolio/static/media/whatsapp.89f6bb05a943d65ca62c.png",
+    "static/media/linkedin.png": "/My-Portfolio/static/media/linkedin.3364aacaaf80bb02f42b.png",
     "static/media/ecommerce.png": "/My-Portfolio/static/media/ecommerce.4b2f0cd8a4129d13152a.png",
     "static/media/S-logo.jpg": "/My-Portfolio/static/media/S-logo.730dfc7e10579156b201.jpg",
+    "static/media/sp_image.jpg": "/My-Portfolio/static/media/sp_image.621edd1ded7c48a8c558.jpg",
+    "static/media/shaktidhar_developer.pdf": "/My-Portfolio/static/media/shaktidhar_developer.41b070351ca74284af31.pdf",
     "static/media/hospital.png": "/My-Portfolio/static/media/hospital.6e8b426b9b346ed9b0fe.png",
     "static/media/auth.png": "/My-Portfolio/static/media/auth.2c805491b1891e6faf0b.png",
     "static/media/album.png": "/My-Portfolio/static/media/album.ead670081b7886d3ad96.png",
     "static/media/habit.png": "/My-Portfolio/static/media/habit.030d0155f10b89689ccf.png",
     "static/media/todo.png": "/My-Portfolio/static/media/todo.7ec5d2faf5e655c8ef3a.png",
     "index.html": "/My-Portfolio/index.html",
-    "main.7248536f.css.map": "/My-Portfolio/static/css/main.7248536f.css.map",
-    "main.70db6ce7.js.map": "/My-Portfolio/static/js/main.70db6ce7.js.map"
+    "main.9023de6b.css.map": "/My-Portfolio/static/css/main.9023de6b.css.map",
+    "main.8889e624.js.map": "/My-Portfolio/static/js/main.8889e624.js.map"
   },
   "entrypoints": [
-    "static/css/main.7248536f.css",
-    "static/js/main.70db6ce7.js"
+    "static/css/main.9023de6b.css",
+    "static/js/main.8889e624.js"
   ]
 }
