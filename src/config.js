@@ -1,4 +1,4 @@
-import resume from "./assets/shakti_fullstack_developer.pdf";
+import resume from "./assets/shaktidhar_developer.pdf";
 const resume_url = resume;
 export default resume_url;
 

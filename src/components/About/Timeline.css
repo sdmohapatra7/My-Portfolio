@@ -1,26 +1,501 @@
 .mainsection {
-    width: 100%;
-  }
-  
-  .mainsection > :nth-child(1) {
-    margin-bottom: 2em;
-  }
-  
-  .vertical-timeline-element-subtitle {
-    margin-top: 0.5em;
-    font-size: 0.9em;
-  }
-  
-  .vertical-timeline-element-title {
-    font-size: 1.1em;
-    color: var(--clr-primary);
-  }
-                        
- .mainsection p,
-.mainsection h3,
-.mainsection h4 {
-  /* text-align: justify; */
-  text-justify: inter-word;
+  width: 100%;
+  position: relative;
 }
 
-  
+/* =========================================
+   1. Double-Track Infinite Sliding Marquee
+   ========================================= */
+.ticker-wrapper {
+  margin: 0 auto 3em auto;
+  max-width: 1100px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  /* Gradient edge mask for a seamless fading slide effect */
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.ticker-track {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  user-select: none;
+}
+
+.ticker-content {
+  display: flex;
+  flex-shrink: 0;
+  gap: 16px;
+  white-space: nowrap;
+  animation: slideMarqueeLeft 35s linear infinite;
+  will-change: transform;
+}
+
+.ticker-content.reverse {
+  animation: slideMarqueeRight 38s linear infinite;
+}
+
+.ticker-track:hover .ticker-content {
+  animation-play-state: paused;
+}
+
+@keyframes slideMarqueeLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes slideMarqueeRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.ticker-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  background: var(--clr-card-bg);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-full);
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--clr-fg-alt);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+  transition: var(--transition-smooth);
+}
+
+.ticker-item:hover {
+  border-color: var(--clr-primary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow);
+}
+
+.alt-item {
+  background: var(--grad-badge);
+}
+
+.ticker-icon {
+  color: var(--clr-primary);
+  font-size: 1.1rem !important;
+}
+
+/* =========================================
+   2. Timeline Interactive Sliding Filter Tabs
+   ========================================= */
+.timeline-filter-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 2.8em;
+}
+
+.timeline-filter-btn {
+  background: var(--clr-card-bg);
+  color: var(--clr-fg);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-full);
+  padding: 9px 22px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  backdrop-filter: blur(12px);
+  box-shadow: var(--shadow);
+}
+
+.timeline-filter-btn:hover {
+  border-color: var(--clr-primary);
+  color: var(--clr-fg-alt);
+  transform: translateY(-2px);
+}
+
+.timeline-filter-btn.active {
+  background: var(--grad-primary);
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0 4px 18px rgba(99, 102, 241, 0.45);
+}
+
+/* =========================================
+   3. Current Work Header & Live Badge
+   ========================================= */
+.current-work-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.active-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 14px;
+  border-radius: var(--radius-full);
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  color: #10b981;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #10b981;
+  box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.8);
+  animation: liveDotPulse 2s infinite;
+}
+
+.senior-pill {
+  padding: 4px 14px;
+  border-radius: var(--radius-full);
+  background: var(--grad-badge);
+  border: 1px solid var(--clr-primary);
+  color: var(--clr-fg-alt);
+  font-size: 0.8rem;
+  font-weight: 700;
+  box-shadow: 0 2px 10px rgba(99, 102, 241, 0.25);
+  animation: pulseSeniorGlow 2.5s infinite alternate;
+}
+
+@keyframes pulseSeniorGlow {
+  0% {
+    box-shadow: 0 0 5px rgba(99, 102, 241, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 16px rgba(99, 102, 241, 0.6);
+  }
+}
+
+.past-role-pill {
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  background: var(--clr-bg-alt);
+  border: 1px solid var(--clr-border);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--clr-fg);
+  text-transform: uppercase;
+}
+
+@keyframes liveDotPulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.8);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+.location-pill {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--clr-fg);
+}
+
+/* Current Spotlight Card */
+.current-spotlight {
+  background: var(--grad-card);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  margin: 12px 0 16px 0;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.spotlight-badge {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: var(--clr-primary);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.current-spotlight h5 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--clr-fg-alt);
+  margin-bottom: 8px;
+}
+
+.spotlight-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.s-stat {
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  background: var(--grad-badge);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-full);
+  color: var(--clr-fg-alt);
+}
+
+/* =========================================
+   4. Timeline Typography & Sliding Shimmer
+   ========================================= */
+.timeline-role {
+  font-size: 1.25rem !important;
+  font-weight: 800 !important;
+  color: var(--clr-fg-alt) !important;
+  margin-bottom: 4px;
+}
+
+.timeline-company {
+  font-size: 0.98rem !important;
+  font-weight: 700 !important;
+  background: var(--grad-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.timeline-body {
+  margin-top: 10px;
+}
+
+.timeline-body p {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--clr-fg);
+  margin-bottom: 12px;
+}
+
+.timeline-bullets {
+  list-style: none;
+  padding-left: 0;
+  margin: 12px 0;
+}
+
+.timeline-bullets li {
+  position: relative;
+  padding-left: 22px;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: var(--clr-fg);
+  margin-bottom: 10px;
+  transition: transform 0.2s ease;
+}
+
+.timeline-bullets li:hover {
+  transform: translateX(4px);
+  color: var(--clr-fg-alt);
+}
+
+.timeline-bullets li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--clr-primary);
+  font-weight: 800;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.timeline-bullets strong {
+  color: var(--clr-fg-alt);
+}
+
+/* Sliding Tech Chips */
+.timeline-tech-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.timeline-tech-chips span {
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  background: var(--clr-bg-alt);
+  border: 1px solid var(--clr-border);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--clr-fg-alt);
+  transition: var(--transition-smooth);
+}
+
+.timeline-tech-chips span:hover {
+  background: var(--grad-primary);
+  color: #fff;
+  border-color: transparent;
+  transform: translateY(-2px);
+}
+
+/* Sliding Shimmer effect across timeline card containers */
+.vertical-timeline-element-content {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease !important;
+}
+
+.vertical-timeline-element-content:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover) !important;
+  border-color: var(--clr-border-hover) !important;
+}
+
+.vertical-timeline-element-content::after {
+  content: "";
+  position: absolute;
+  top: -60%;
+  left: -80%;
+  width: 40%;
+  height: 220%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.12) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(25deg);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.vertical-timeline-element-content:hover::after {
+  animation: shimmerSweep 1s forwards;
+  opacity: 1;
+}
+
+@keyframes shimmerSweep {
+  0% {
+    left: -80%;
+  }
+  100% {
+    left: 140%;
+  }
+}
+
+.vertical-timeline-element-date {
+  font-weight: 700 !important;
+  color: var(--clr-primary) !important;
+  opacity: 1 !important;
+}
+
+@media (max-width: 1170px) {
+  .vertical-timeline-element-date {
+    color: var(--clr-fg-alt) !important;
+  }
+}
+
+/* Mobile Phone Responsive Optimization (< 640px) */
+@media (max-width: 640px) {
+  .ticker-wrapper {
+    margin-bottom: 2em;
+    gap: 8px;
+  }
+
+  .ticker-item {
+    font-size: 0.76rem;
+    padding: 6px 12px;
+  }
+
+  .timeline-filter-container {
+    gap: 6px;
+    margin-bottom: 1.8em;
+  }
+
+  .timeline-filter-btn {
+    padding: 6px 12px;
+    font-size: 0.78rem;
+  }
+
+  .vertical-timeline-element-content {
+    padding: 16px 14px !important;
+    border-radius: var(--radius-md) !important;
+  }
+
+  .timeline-role {
+    font-size: 1.15rem !important;
+  }
+
+  .timeline-company {
+    font-size: 0.88rem !important;
+  }
+
+  .current-work-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+
+  .active-pill, .past-role-pill, .location-pill {
+    font-size: 0.68rem;
+    padding: 3px 8px;
+  }
+
+  .current-spotlight {
+    padding: 12px;
+    margin: 12px 0;
+  }
+
+  .current-spotlight h5 {
+    font-size: 0.92rem;
+  }
+
+  .spotlight-stats {
+    gap: 6px;
+  }
+
+  .s-stat {
+    font-size: 0.7rem;
+    padding: 3px 8px;
+  }
+
+  .timeline-bullets {
+    padding-left: 18px;
+    margin: 12px 0;
+  }
+
+  .timeline-bullets li {
+    font-size: 0.84rem;
+    line-height: 1.55;
+    margin-bottom: 8px;
+  }
+
+  .timeline-tech-chips {
+    gap: 6px;
+    margin-top: 12px;
+  }
+
+  .timeline-tech-chips span {
+    font-size: 0.72rem;
+    padding: 3px 8px;
+  }
+}

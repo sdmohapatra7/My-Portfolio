@@ -7,61 +7,104 @@
   inset: 0;
   width: 100%;
   height: 100vh;
-  z-index: 1005; /* High z-index to cover everything */
+  z-index: 1005;
   background-color: var(--clr-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  transition: all 0.3s ease-in-out;
 }
-
 
 .nav__list--open {
   display: flex;
 }
 
 .nav__list-item {
-  margin: 0.8em 0;
+  margin: 1em 0;
+}
+
+.nav__resume-btn {
+  background: var(--grad-primary) !important;
+  color: #ffffff !important;
+  padding: 0.5em 1.2em !important;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.35);
+  transition: var(--transition-smooth);
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav__resume-btn:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.5);
+  color: #ffffff !important;
+}
+
+.nav__resume-btn::before {
+  display: none !important;
 }
 
 .nav__hamburger {
   display: flex;
-  z-index: 1006; /* Higher than nav__list */
+  z-index: 1006;
   margin-left: 0.8em;
   background: transparent;
   color: var(--clr-primary);
   border: none;
   cursor: pointer;
-  padding: 5px;
+  padding: 6px;
+  border-radius: 8px;
+  transition: var(--transition-smooth);
+}
+
+.nav__hamburger:hover {
+  background-color: var(--clr-border);
 }
 
 .nav__hamburger svg {
-  font-size: 2.2rem; /* Larger icon */
+  font-size: 2.2rem;
 }
 
-
 .nav__theme {
-  margin-top: 0.4em;
-  z-index: 1006; /* Higher than nav__list */
-  background: transparent;
+  margin-top: 0;
+  z-index: 1006;
+  background: var(--clr-bg-alt);
   color: var(--clr-primary);
-  border: none;
+  border: 1px solid var(--clr-border);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  box-shadow: var(--shadow);
+}
+
+.nav__theme:hover {
+  transform: rotate(20deg) scale(1.1);
+  box-shadow: var(--shadow-glow);
+  border-color: var(--clr-primary);
 }
 
 @media (min-width: 768px) {
   .nav__list {
-    display: flex !important; /* Force display on desktop */
+    display: flex !important;
     position: static;
     flex-direction: row;
     height: auto;
     width: auto;
     background-color: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
   }
 
   .nav__list-item {
-    margin: 0 0 0 1.5em;
+    margin: 0 0 0 1.6em;
   }
 
   .nav__hamburger {
-    display: none !important; /* Force hide on desktop */
+    display: none !important;
   }
 }
-
-
-

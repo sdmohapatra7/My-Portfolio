@@ -55,6 +55,15 @@ export const Navbar = () => {
                     </li>
                     <li className="nav__list-item">
                         <a
+                            href="#experience"
+                            onClick={() => toggleNavList("#experience")}
+                            className="link link--nav"
+                        >
+                            Experience
+                        </a>
+                    </li>
+                    <li className="nav__list-item">
+                        <a
                             href="#projects"
                             onClick={() => toggleNavList("#projects")}
                             className="link link--nav"
@@ -75,7 +84,7 @@ export const Navbar = () => {
                         <a
                             href={resume_url}
                             onClick={toggleNavList}
-                            className="link link--nav"
+                            className="link link--nav nav__resume-btn"
                             target="_blank"
                             rel="noreferrer"
                         >

@@ -1,41 +1,30 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  border: 0;
-  outline: 0;
-  background-color: inherit;
-  color: inherit;
-  font-family: inherit;
-  font-size: inherit;
-  box-shadow: none;
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
 }
+
+body {
+  background-color: var(--clr-bg);
+  color: var(--clr-fg);
+  font-family: "Plus Jakarta Sans", "Poppins", sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 h1,
 h2,
 h3,
-h4 {
-  line-height: 1.2;
+h4,
+h5,
+h6 {
+  line-height: 1.25;
   color: var(--clr-fg-alt);
-}
-
-h1 {
-  font-size: 4rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
-h4 {
-  font-size: 1.3rem;
 }
 
 ul {
@@ -44,13 +33,17 @@ ul {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 button {
   cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
 }
 
-body{
-  background-color: var(--clr-bg);
-  color: var(--clr-fg);
+::selection {
+  background: rgba(99, 102, 241, 0.3);
+  color: #fff;
 }
